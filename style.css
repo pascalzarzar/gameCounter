@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+ body{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: orange;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 600px;
+    border-radius: 1em;
+    box-shadow: 0px 0px 25px 13px rgba(127,127,127,0.34);
+    background-color: whitesmoke;
+    padding: 0 1em;
+}
+
+h1 {
+    font-size: 4.8rem;
+    text-align: center;
+    margin: 0.2em 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+select {
+    height: 3em;
+    width: 90%;
+    margin-bottom: 3em;
+    border: 2px solid rgb(75, 75, 75);
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 90%;
+    height: 3em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+}
+
+
+#player1Point {
+    color: white;
+    background-color: rgb(0, 87, 201);
+}
+
+#player2Point {
+    color: white;
+    background-color: rgb(221, 93, 8);
+}
+
+#player1Point:disabled, #player2Point:disabled {
+    color: white;
+    background-color:rgba(128, 128, 128, 0.651);
+}
+
+
+#reset {
+    color: rgb(75, 75, 75);
+    border: 2px solid rgb(75, 75, 75);
+}
+
+
+.win {
+    color: rgb(86, 202, 86);
+}
+
+.lose {
+    color: rgb(253, 86, 86);
+}

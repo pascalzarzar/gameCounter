@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Score Keeper</title>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h2 id="result"></h2>
+            <h1><span id="player1Score">0</span> to <span id="player2Score">0</span></h1>
+            <h3>Use the buttons below to keep score.</h3>
+                <label for="gamesCount"><p>Playing to:</p></label>
+            <select name="gamesCount" id="gamesCount">
+                <option value="1">1 Game</option>
+                <option value="2">2 Games</option>
+                <option value="3">3 Games</option>
+                <option value="4">4 Games</option>
+                <option value="5">5 Games</option>
+                <option value="6">6 Games</option>
+                <option value="7">7 Games</option>
+            </select>
+            <button id="player1Point">+1 Player One</button>
+            <button id="player2Point">+1 Player Two</button>
+            <button id="reset">Reset</button>
+        </div>    
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
