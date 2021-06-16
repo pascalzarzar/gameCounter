@@ -13,10 +13,12 @@ const player1Point = document.querySelector('#player1Point');
 const player2Point = document.querySelector('#player2Point');
 const reset = document.querySelector('#reset');
 
+//inicializamos variables de control para los puntajes y cantidad de rondas a jugar
 let gamesCount = 1;
 let player1Score = 0;
 let player2Score = 0;
 
+//Escuchamos los cambios que se ejecutan en el select y reseteamos los puntajes
 gamesSelector.addEventListener('change', () => {
     gamesCount = parseInt(gamesSelector.value);
     player1DomScore.innerHTML = 0;
@@ -25,6 +27,7 @@ gamesSelector.addEventListener('change', () => {
     player2Score = 0;
 });
 
+//Escuchamos el botón que le asigna puntaje al player 1 y validamos si se cumple la condición para ganar el juego.
 player1Point.addEventListener('click', () => {
     player1DomScore.innerHTML++;
     player1Score++
@@ -37,6 +40,7 @@ player1Point.addEventListener('click', () => {
     }
 });
 
+//Escuchamos el botón que le asigna puntaje al player 2 y validamos si se cumple la condición para ganar el juego.
 player2Point.addEventListener('click', () => {
     player2DomScore.innerHTML++;
     player2Score++
@@ -49,6 +53,7 @@ player2Point.addEventListener('click', () => {
     }
 });
 
+//Escuchamos el botón para resetear el contador y todas las variables implicadas.
 reset.addEventListener('click', () => {
     if (gamesCount === player1Score){
         player1DomScore.classList.remove('win');
