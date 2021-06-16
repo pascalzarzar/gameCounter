@@ -18,11 +18,13 @@ let gamesCount = 1;
 let player1Score = 0;
 let player2Score = 0;
 
+//función para deshabilitar botones luego de encontrar un ganador
 const disableButtons = () => {
     player1Point.disabled = true;
     player2Point.disabled = true;
 };
 
+//función para verificar si tenemos un ganador luego de agregar un punto.
 const verifyWinner = (player1, player2) => {
     if (gamesCount === player1) {
         result.innerHTML = 'Player 1 is the winner!';
@@ -37,6 +39,7 @@ const verifyWinner = (player1, player2) => {
     }  
 };
 
+//función para resetear los valores del contador cada vez que definimos la cantidad de juegos a jugar en el selector
 const resetValues = () => {
     result.innerHTML = '';
     player1DomScore.innerHTML = 0;
@@ -47,6 +50,7 @@ const resetValues = () => {
     player2Point.disabled = false;
 };
 
+//función para resetear el contador cuando se encuentra un ganador o cada vez que sea necesario
 const resetGame = (player1,player2) => {
     if (gamesCount === player1){
         player1DomScore.classList.remove('win');
